@@ -5,6 +5,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface ApiInterface {
-    @GET("data.json")
+    @GET("records/LATEST?disableRedirect=true")
     fun getStateData(): Call<Result>
 }

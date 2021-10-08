@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ServiceBuilder {
     fun createInstance(): ApiInterface{
         val retrofit = Retrofit.Builder()
-                .baseUrl("https://data.covid19india.org/")
+                .baseUrl("https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         val api = retrofit.create(ApiInterface::class.java)
