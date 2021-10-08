@@ -5,7 +5,21 @@ import com.google.gson.annotations.SerializedName
 data class Result (
 
     @SerializedName("regionData") val stateWiseData: List<Data>,
+    val activeCases: Int,
+    val recovered: Int,
+    val deaths: Int,
+    val totalCases: Int,
     val lastUpdatedAtApify: String
+
+    /*
+    * "activeCases": 240221,
+    "activeCasesNew": -3977,
+    "recovered": 33225221,
+    "recoveredNew": 24963,
+    "deaths": 450127,
+    "deathsNew": 271,
+    "previousDayTests": 1385706,
+    "totalCases": 33915569,*/
 )
 data class Data(
 

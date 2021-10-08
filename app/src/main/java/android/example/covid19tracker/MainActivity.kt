@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 states.addAll(responseBody.stateWiseData)
+                tv_activeCases.text = responseBody.activeCases.toString()
+                tv_confirmedCases.text = responseBody.totalCases.toString()
+                tv_deceasedCases.text = responseBody.deaths.toString()
+                tv_recoverdCases.text = responseBody.recovered.toString()
                 adapter.notifyDataSetChanged()
             }
             override fun onFailure(call: Call<Result>, t: Throwable) {
