@@ -4,9 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.item_state.view.*
 
 
@@ -35,4 +33,6 @@ class DataAdapter(val list: List<Data>, val context: Context): RecyclerView.Adap
     }
 
     override fun getItemCount(): Int = list.size
+
+
 }
