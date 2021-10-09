@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         swipeContainer.setOnRefreshListener {
             getResultFromApi()
         }
+
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -102,5 +103,6 @@ class MainActivity : AppCompatActivity() {
         }
         return convTime
     }
+
 
 }
